@@ -33,12 +33,17 @@ input:focus,textarea:focus,select:focus { outline:none !important; border-color:
 .mini-stat { border:1px solid rgba(255,255,255,.12) !important; background:rgba(255,255,255,.055) !important; backdrop-filter:blur(16px) !important; border-radius:14px !important; }
 .login-section { background:rgba(255,255,255,.70) !important; backdrop-filter:blur(18px) !important; }
 .login-container { background:rgba(255,255,255,.88) !important; border:1px solid rgba(16,24,40,.07) !important; box-shadow:0 24px 70px rgba(20,28,55,.10) !important; border-radius:28px !important; }
-.login-heading h2 { color:#101522 !important; letter-spacing:-1px !important; }
+.login-heading { text-align:center !important; }
+.login-heading .form-label { display:block !important; text-align:center !important; }
+.login-heading h2 { color:#101522 !important; letter-spacing:-1px !important; text-align:center !important; }
+.login-heading p { text-align:center !important; color:var(--jm-muted) !important; }
 .form-label,.eyebrow { color:var(--jm-primary) !important; font-weight:800 !important; letter-spacing:.13em !important; }
 .input-wrapper { border-radius:13px !important; border-color:rgba(16,24,40,.10) !important; background:#fff !important; box-shadow:0 4px 14px rgba(20,28,55,.035) !important; }
 .login-button { border:0 !important; background:linear-gradient(135deg,#5b4cf6,#7c5cff 55%,#19b8d1) !important; box-shadow:0 12px 28px rgba(91,76,246,.25) !important; }
 .login-button:hover { transform:translateY(-2px) !important; box-shadow:0 16px 34px rgba(91,76,246,.32) !important; }
 .forgot-button,.register-section a { color:var(--jm-primary) !important; }
+.register-section { text-align:center !important; }
+.security-note { text-align:center !important; }
 .login-error { border:1px solid rgba(229,72,98,.18) !important; background:rgba(229,72,98,.06) !important; border-radius:13px !important; }
 
 /* Student dashboard */
