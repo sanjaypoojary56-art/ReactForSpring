@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+}
+
+.jobs-page {
+  min-height: 100vh;
+  background: #f6f7fb;
+  color: #181b27;
+}
+
+.jobs-header {
+  height: 72px;
+  background: white;
+  border-bottom: 1px solid #e8e9ef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+}
+
+.jobs-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 19px;
+}
+
+.jobs-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #4f46e5;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jobs-header nav {
+  display: flex;
+  gap: 5px;
+}
+
+.jobs-header nav button {
+  border: 0;
+  background: transparent;
+  padding: 9px 13px;
+  border-radius: 7px;
+  color: #5f6473;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.jobs-header nav button:hover {
+  background: #f1f2f7;
+}
+
+.jobs-header .logout-button {
+  color: #dc2626;
+}
+
+.jobs-content {
+  width: 88%;
+  max-width: 1180px;
+  margin: auto;
+  padding: 55px 0;
+}
+
+.jobs-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 28px;
+}
+
+.jobs-title span {
+  color: #6366f1;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+}
+
+.jobs-title h1 {
+  font-size: 36px;
+  margin: 8px 0;
+}
+
+.jobs-title p {
+  color: #747a8a;
+  font-size: 13px;
+}
+
+.job-count {
+  color: #777d8c;
+  font-size: 12px;
+}
+
+.job-search {
+  height: 52px;
+  background: white;
+  border: 1px solid #e2e4ea;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 17px;
+  margin-bottom: 24px;
+}
+
+.job-search span {
+  font-size: 22px;
+  color: #858b9a;
+  margin-right: 10px;
+}
+
+.job-search input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 13px;
+}
+
+.jobs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.job-card {
+  background: white;
+  border: 1px solid #e6e7ed;
+  border-radius: 13px;
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.job-card:hover {
+  border-color: #cfd1ff;
+}
+
+.job-main {
+  display: flex;
+  gap: 17px;
+}
+
+.job-company-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 11px;
+  background: #eef0ff;
+  color: #4f46e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.job-information h2 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.job-company {
+  margin: 6px 0;
+  color: #5d6372;
+  font-size: 12px;
+}
+
+.job-location {
+  color: #858b99;
+  font-size: 11px;
+}
+
+.job-description {
+  max-width: 650px;
+  color: #747a89;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+.job-side {
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.match-box {
+  text-align: right;
+}
+
+.match-box strong {
+  display: block;
+  color: #16a34a;
+  font-size: 21px;
+}
+
+.match-box span {
+  color: #7b8190;
+  font-size: 10px;
+}
+
+.job-view-button {
+  border: 0;
+  background: #4f46e5;
+  color: white;
+  border-radius: 7px;
+  padding: 9px 13px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.no-jobs {
+  background: white;
+  border: 1px solid #e5e6eb;
+  border-radius: 13px;
+  padding: 60px;
+  text-align: center;
+}
+
+.no-jobs h2 {
+  font-size: 18px;
+}
+
+.no-jobs p {
+  color: #777d8b;
+  font-size: 12px;
+}
+
+.jobs-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jobs-error {
+  background: #fff1f2;
+  color: #be123c;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 700px) {
+
+  .jobs-header {
+    padding: 0 20px;
+  }
+
+  .jobs-content {
+    width: 92%;
+  }
+
+  .jobs-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .job-card {
+    flex-direction: column;
+  }
+
+  .job-side {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .match-box {
+    text-align: left;
+  }
+}

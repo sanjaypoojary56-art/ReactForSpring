@@ -1,0 +1,656 @@
+* {
+    box-sizing: border-box;
+}
+
+.recruiter-register-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: #f3f6fb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.recruiter-register-card {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 42px;
+    border-radius: 18px;
+    box-shadow: 0 15px 50px rgba(24, 42, 70, 0.10);
+}
+
+.recruiter-logo {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #315efb;
+    color: white;
+
+    border-radius: 13px;
+
+    font-size: 21px;
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+.recruiter-label {
+    color: #315efb;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.recruiter-register-card h1 {
+    margin: 9px 0 10px;
+    color: #182238;
+    font-size: 31px;
+}
+
+.recruiter-description {
+    color: #747e91;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.recruiter-input-group {
+    margin-bottom: 20px;
+}
+
+.recruiter-input-group label {
+    display: block;
+    color: #30394c;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.recruiter-input-group input[type="email"],
+.recruiter-input-group input[type="password"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #d9dfeb;
+    border-radius: 9px;
+    padding: 0 14px;
+    outline: none;
+    font-size: 14px;
+}
+
+.recruiter-input-group input[type="email"]:focus,
+.recruiter-input-group input[type="password"]:focus {
+    border-color: #315efb;
+    box-shadow: 0 0 0 3px rgba(49, 94, 251, 0.10);
+}
+
+
+/* FILE */
+
+.file-upload {
+    border: 1.5px dashed #bdc8dc;
+    border-radius: 10px;
+    padding: 18px;
+    background: #fafcff;
+    position: relative;
+}
+
+.file-upload input[type="file"] {
+    width: 100%;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.file-text {
+    margin-top: 9px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.file-text strong {
+    font-size: 13px;
+    color: #30394c;
+}
+
+.file-text span {
+    color: #8993a5;
+    font-size: 11px;
+}
+
+
+/* NOTICE */
+
+.verification-notice {
+    display: flex;
+    gap: 12px;
+    padding: 14px;
+    border-radius: 10px;
+    background: #f4f7ff;
+    border: 1px solid #dce5ff;
+    margin: 23px 0;
+}
+
+.notice-icon {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #315efb;
+    color: white;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.verification-notice strong {
+    font-size: 12px;
+    color: #26334d;
+}
+
+.verification-notice p {
+    margin: 5px 0 0;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #78849a;
+}
+
+
+/* MESSAGE */
+
+.recruiter-message {
+    padding: 12px;
+    border-radius: 8px;
+    background: #edf8f1;
+    color: #237341;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+
+/* BUTTON */
+
+.recruiter-register-button {
+    width: 100%;
+    height: 51px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #315efb;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.recruiter-register-button:hover {
+    background: #244bd3;
+}
+
+.recruiter-register-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* LINKS */
+
+.recruiter-login,
+.student-register {
+    text-align: center;
+    font-size: 13px;
+    color: #7c8698;
+}
+
+.recruiter-login {
+    margin-top: 22px;
+}
+
+.student-register {
+    margin-top: 12px;
+    font-size: 12px;
+}
+
+.recruiter-login a,
+.student-register a {
+    color: #315efb;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.recruiter-login a:hover,
+.student-register a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 550px) {
+
+    .recruiter-register-page {
+        padding: 15px;
+    }
+
+    .recruiter-register-card {
+        padding: 28px 22px;
+    }
+
+    .recruiter-register-card h1 {
+        font-size: 27px;
+    }
+}
+/* =========================================
+   MODAL OVERLAY
+========================================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.65);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  z-index: 9999;
+
+  overflow-y: auto;
+}
+
+
+/* =========================================
+   POST JOB MODAL
+========================================= */
+
+.job-modal {
+  width: min(620px, 100%);
+
+  max-height: calc(100vh - 40px);
+
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 28px;
+
+  box-sizing: border-box;
+
+  overflow-y: auto;
+
+  position: relative;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================================
+   MODAL HEADER
+========================================= */
+
+.modal-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  margin-bottom: 25px;
+}
+
+
+.modal-top h2 {
+  margin: 5px 0 0;
+
+  font-size: 28px;
+
+  color: #171717;
+}
+
+
+.modal-close {
+  width: 38px;
+  height: 38px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #f1f1ed;
+
+  color: #333;
+
+  font-size: 25px;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+.modal-close:hover {
+  background: #e4e4df;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.job-modal form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+
+.job-modal label {
+  font-size: 13px;
+
+  font-weight: 800;
+
+  color: #333;
+
+  margin-top: 7px;
+}
+
+
+.job-modal input[type="text"],
+.job-modal textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d8d8d2;
+
+  border-radius: 10px;
+
+  padding: 13px 14px;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  outline: none;
+
+  background: #fafaf8;
+}
+
+
+.job-modal input[type="text"]:focus,
+.job-modal textarea:focus {
+  border-color: #111;
+
+  background: white;
+}
+
+
+.job-modal textarea {
+  resize: vertical;
+
+  min-height: 130px;
+}
+
+
+/* =========================================
+   SKILLS
+========================================= */
+
+.skills-checkbox-container {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 9px;
+
+  margin-top: 2px;
+
+  /*
+     Important:
+     Skills themselves scroll instead of
+     pushing the buttons below the screen.
+  */
+  max-height: 180px;
+
+  overflow-y: auto;
+
+  padding: 4px;
+
+  border: 1px solid #e1e1dc;
+
+  border-radius: 11px;
+
+  background: #fafaf8;
+}
+
+
+.skill-checkbox {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 11px;
+
+  background: white;
+
+  border: 1px solid #deded8;
+
+  border-radius: 9px;
+
+  cursor: pointer;
+
+  transition: 0.18s;
+}
+
+
+.skill-checkbox:hover {
+  border-color: #999;
+
+  background: #f5f5f1;
+}
+
+
+.skill-checkbox.selected {
+  border-color: #111;
+
+  background: #f1f5df;
+}
+
+
+.skill-checkbox input {
+  display: none;
+}
+
+
+.custom-checkbox {
+  width: 19px;
+
+  height: 19px;
+
+  flex-shrink: 0;
+
+  border: 1.5px solid #999;
+
+  border-radius: 5px;
+
+  background: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 12px;
+
+  font-weight: 900;
+}
+
+
+.skill-checkbox.selected .custom-checkbox {
+  background: #111;
+
+  color: #d7ff4f;
+
+  border-color: #111;
+}
+
+
+.skill-name {
+  font-size: 12px;
+
+  font-weight: 700;
+
+  color: #333;
+}
+
+
+.no-skills-message {
+  grid-column: 1 / -1;
+
+  padding: 15px;
+
+  margin: 0;
+
+  color: #888;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   MODAL BUTTONS
+========================================= */
+
+.modal-footer {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  margin-top: 18px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid #e5e5df;
+
+  /*
+     Keeps buttons visible at the bottom
+     of the modal.
+  */
+  position: sticky;
+
+  bottom: 0;
+
+  background: white;
+}
+
+
+.modal-cancel,
+.modal-submit {
+  border: none;
+
+  border-radius: 9px;
+
+  padding: 12px 20px;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+
+.modal-cancel {
+  background: #eeeeea;
+
+  color: #333;
+}
+
+
+.modal-cancel:hover {
+  background: #dfdfda;
+}
+
+
+.modal-submit {
+  background: #111;
+
+  color: white;
+
+  min-width: 130px;
+}
+
+
+.modal-submit:hover {
+  background: #292929;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .modal-overlay {
+    padding: 10px;
+  }
+
+
+  .job-modal {
+    max-height: calc(100vh - 20px);
+
+    padding: 20px;
+
+    border-radius: 14px;
+  }
+
+
+  .skills-checkbox-container {
+    grid-template-columns: 1fr;
+
+    max-height: 160px;
+  }
+
+
+  .modal-footer {
+    flex-direction: column;
+  }
+
+
+  .modal-cancel,
+  .modal-submit {
+    width: 100%;
+  }
+
+}

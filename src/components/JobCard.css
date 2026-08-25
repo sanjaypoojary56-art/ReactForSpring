@@ -1,0 +1,27 @@
+
+.job-card {
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.job-card h2 {
+    margin-bottom: 15px;
+}
+
+.job-card p {
+    margin: 8px 0;
+}
+
+.job-card button {
+    margin-top: 15px;
+    padding: 10px 18px;
+    border: none;
+    background: royalblue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
