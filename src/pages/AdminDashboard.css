@@ -1,169 +1,51 @@
-
-* {
-    box-sizing: border-box;
-}
-
-.admin-page {
-    min-height: 100vh;
-    background: #f4f6fa;
-    padding: 45px 7%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.admin-header {
-    background: #182238;
-    color: white;
-    padding: 32px;
-    border-radius: 15px;
-    margin-bottom: 25px;
-}
-
-.admin-header span {
-    color: #7da2ff;
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.admin-header h1 {
-    margin: 8px 0;
-    font-size: 30px;
-}
-
-.admin-header p {
-    margin: 0;
-    color: #aeb8ca;
-    font-size: 14px;
-}
-
-.admin-message {
-    background: #eaf7ef;
-    color: #247342;
-    padding: 13px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    font-size: 13px;
-}
-
-.application-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.application-card {
-    background: white;
-    padding: 22px;
-    border-radius: 13px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    box-shadow: 0 4px 18px rgba(30, 45, 70, 0.06);
-}
-
-.company-info {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-}
-
-.company-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 11px;
-    background: #e9efff;
-    color: #315efb;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-weight: bold;
-}
-
-.company-info h3 {
-    margin: 0 0 5px;
-    font-size: 15px;
-    color: #202b40;
-}
-
-.company-info p {
-    margin: 0 0 7px;
-    color: #8992a2;
-    font-size: 11px;
-}
-
-.pending {
-    display: inline-block;
-    padding: 4px 8px;
-    border-radius: 5px;
-    background: #fff4db;
-    color: #a66a00;
-    font-size: 9px;
-    font-weight: bold;
-}
-
-.application-actions {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.application-actions button,
-.view-document {
-    border: none;
-    border-radius: 7px;
-    padding: 10px 14px;
-    font-size: 12px;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.view-document {
-    background: #eef2f8;
-    color: #46536b;
-}
-
-.allow-button {
-    background: #23864b;
-    color: white;
-}
-
-.reject-button {
-    background: #ffecec;
-    color: #c03939;
-}
-
-.empty {
-    background: white;
-    padding: 50px;
-    text-align: center;
-    border-radius: 13px;
-    color: #7d8797;
-}
-
+* { box-sizing: border-box; }
+.admin-page { min-height: 100vh; background: #f4f6fa; padding: 45px 7%; font-family: Arial, Helvetica, sans-serif; width: 100%; overflow-x: hidden; }
+.admin-header { background: #182238; color: white; padding: 32px; border-radius: 15px; margin-bottom: 25px; }
+.admin-header span, .skills-header > div > span { color: #7da2ff; font-size: 11px; font-weight: bold; letter-spacing: 2px; }
+.admin-header h1 { margin: 8px 0; font-size: 30px; }
+.admin-header p, .skills-header p { margin: 0; color: #aeb8ca; font-size: 14px; }
+.admin-message, .skills-message { background: #eaf7ef; color: #247342; padding: 13px; border-radius: 8px; margin-bottom: 20px; font-size: 13px; }
+.skills-panel { background: white; padding: 24px; border-radius: 13px; margin-bottom: 25px; box-shadow: 0 4px 18px rgba(30,45,70,.06); }
+.skills-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 18px; }
+.skills-header h2 { margin: 6px 0; color: #202b40; font-size: 22px; }
+.skill-count { background: #eef2ff; color: #315efb; padding: 7px 10px; border-radius: 20px; font-size: 11px; font-weight: bold; white-space: nowrap; }
+.add-skill-form { display: flex; gap: 10px; margin-bottom: 20px; }
+.add-skill-form input { flex: 1; min-width: 0; border: 1px solid #d9deea; border-radius: 8px; padding: 12px 14px; font-size: 13px; outline: none; }
+.add-skill-form input:focus { border-color: #315efb; }
+.add-skill-form button { border: none; border-radius: 8px; padding: 12px 18px; background: #315efb; color: white; font-size: 12px; font-weight: bold; cursor: pointer; white-space: nowrap; }
+.add-skill-form button:disabled { opacity: .65; cursor: not-allowed; }
+.skills-list { display: flex; flex-wrap: wrap; gap: 9px; }
+.skill-chip { display: inline-flex; align-items: center; max-width: 100%; padding: 8px 11px; border-radius: 20px; background: #f1f4fa; color: #39455d; font-size: 12px; overflow-wrap: anywhere; }
+.skills-empty { color: #7d8797; font-size: 13px; }
+.application-list { display: flex; flex-direction: column; gap: 15px; }
+.application-card { background: white; padding: 22px; border-radius: 13px; display: flex; align-items: center; justify-content: space-between; gap: 20px; box-shadow: 0 4px 18px rgba(30,45,70,.06); }
+.company-info { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.company-icon { width: 48px; height: 48px; flex: 0 0 48px; border-radius: 11px; background: #e9efff; color: #315efb; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+.company-info h3 { margin: 0 0 5px; font-size: 15px; color: #202b40; overflow-wrap: anywhere; }
+.company-info p { margin: 0 0 7px; color: #8992a2; font-size: 11px; overflow-wrap: anywhere; }
+.pending { display: inline-block; padding: 4px 8px; border-radius: 5px; background: #fff4db; color: #a66a00; font-size: 9px; font-weight: bold; }
+.application-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.application-actions button, .view-document { border: none; border-radius: 7px; padding: 10px 14px; font-size: 12px; font-weight: bold; cursor: pointer; text-decoration: none; }
+.view-document { background: #eef2f8; color: #46536b; }
+.allow-button { background: #23864b; color: white; }
+.reject-button { background: #ffecec; color: #c03939; }
+.empty { background: white; padding: 50px; text-align: center; border-radius: 13px; color: #7d8797; }
 @media (max-width: 750px) {
-
-    .application-card {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .application-actions {
-        flex-wrap: wrap;
-    }
-
-    .application-actions button,
-    .view-document {
-        flex: 1;
-        text-align: center;
-    }
-
-    .admin-page {
-        padding: 20px;
-    }
+  .admin-page { padding: 16px 12px; }
+  .admin-header { padding: 22px 18px; border-radius: 12px; margin-bottom: 16px; }
+  .admin-header h1 { font-size: 24px; line-height: 1.2; }
+  .admin-header p, .skills-header p { font-size: 13px; line-height: 1.5; }
+  .skills-panel { padding: 18px; border-radius: 12px; margin-bottom: 16px; }
+  .skills-header { flex-direction: column; gap: 10px; }
+  .skills-header h2 { font-size: 20px; }
+  .add-skill-form { flex-direction: column; }
+  .add-skill-form button { width: 100%; }
+  .application-card { flex-direction: column; align-items: stretch; padding: 18px; }
+  .application-actions { display: grid; grid-template-columns: 1fr; width: 100%; }
+  .application-actions button, .view-document { width: 100%; text-align: center; }
+  .empty { padding: 35px 18px; }
 }
-
-
+@media (max-width: 380px) {
+  .admin-page { padding: 12px 8px; }
+  .admin-header, .skills-panel, .application-card { border-radius: 10px; }
+}

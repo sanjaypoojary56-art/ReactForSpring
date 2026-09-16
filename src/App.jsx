@@ -5,6 +5,7 @@ import {
   Navigate
 } from "react-router-dom";
 
+import "./AppRedesign.css";
 import Login from "./pages/Login.jsx";
 import Register from "./pages/Register.jsx";
 import StudentDashboard from "./pages/StudentDashboard.jsx";
@@ -90,4 +91,3 @@ function App() {
 }
 
 export default App;
-
