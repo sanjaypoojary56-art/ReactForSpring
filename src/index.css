@@ -42,11 +42,15 @@
   #social .button-icon { filter: invert(1) brightness(2); }
 }
 
-body { margin: 0; }
+html, body { margin: 0; width: 100%; min-width: 0; overflow-x: hidden; }
+*, *::before, *::after { box-sizing: border-box; }
+img, svg, video, canvas { max-width: 100%; }
+input, textarea, select, button { max-width: 100%; font: inherit; }
 
 #root {
   width: 1126px;
   max-width: 100%;
+  min-width: 0;
   margin: 0 auto;
   text-align: center;
   border-inline: 1px solid var(--border);
@@ -62,3 +66,11 @@ h2 { font-size: 24px; line-height: 118%; letter-spacing: -0.24px; margin: 0 0 8p
 p { margin: 0; }
 code,.counter { font-family: var(--mono); display: inline-flex; border-radius: 4px; color: var(--text-h); }
 code { font-size: 15px; line-height: 135%; padding: 4px 8px; background: var(--code-bg); }
+
+@media (max-width: 600px) {
+  :root { font-size: 15px; }
+  #root { width: 100%; border-inline: none; }
+  h1 { font-size: 30px; letter-spacing: -0.8px; }
+  h2 { font-size: 20px; }
+  button, input, textarea, select { max-width: 100%; }
+}
