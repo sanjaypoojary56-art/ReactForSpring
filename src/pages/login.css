@@ -418,3 +418,6 @@
   }
 
 }
+
+/* Professional corporate visual overrides */
+.login-page{background:var(--jm-bg)!important;color:var(--jm-ink)!important}.login-visual{background:#172033!important;color:#fff!important}.login-section{background:#fff!important}.brand-mark{background:var(--jm-accent)!important;box-shadow:none!important}.login-heading h2{color:var(--jm-ink)!important}.form-label{color:var(--jm-accent)!important}.login-heading p{color:var(--jm-muted)!important}.input-wrapper{border-color:var(--jm-line)!important;background:#fff!important;border-radius:8px!important}.login-button{background:var(--jm-accent)!important;border-radius:8px!important;box-shadow:none!important;min-height:44px!important}.login-button:hover:not(:disabled){background:var(--jm-accent-dark)!important;box-shadow:0 4px 12px rgba(21,94,239,.18)!important}.forgot-button,.register-section a{color:var(--jm-accent)!important}@media(max-width:900px){.login-section{padding:28px 20px!important}}@media(max-width:600px){.login-section{padding:20px 14px!important}.login-container{width:100%!important;max-width:100%!important}.login-heading h2{font-size:clamp(26px,8vw,32px)!important}.input-wrapper{min-height:48px!important}.forgot-button,.password-toggle{min-height:44px!important}}
