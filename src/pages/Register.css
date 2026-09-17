@@ -369,3 +369,6 @@
     }
 }
 
+
+/* Professional corporate visual overrides */
+.register-page{background:var(--jm-bg)!important;color:var(--jm-ink)!important}.register-left{background:#172033!important}.register-right{background:#fff!important}.brand-mark{background:var(--jm-accent)!important}.form-heading h2{color:var(--jm-ink)!important}.account-label,.small-heading{color:var(--jm-accent)!important}.form-heading p{color:var(--jm-muted)!important}.input-group input{border-color:var(--jm-line)!important;border-radius:8px!important}.input-group input:focus{border-color:var(--jm-accent)!important;box-shadow:0 0 0 3px rgba(21,94,239,.12)!important}.role-box{border-color:var(--jm-line)!important;background:#f8fafc!important}.role-icon{background:var(--jm-accent-soft)!important;color:var(--jm-accent)!important}.register-button{background:var(--jm-accent)!important;border-radius:8px!important;min-height:44px!important}.register-button:hover:not(:disabled){background:var(--jm-accent-dark)!important}.login-link a{color:var(--jm-accent)!important}@media(max-width:900px){.register-right{padding:28px 20px!important}}@media(max-width:600px){.register-right{padding:20px 14px!important}.register-card{width:100%!important;max-width:100%!important}.form-heading h2{font-size:clamp(26px,8vw,32px)!important}.input-group input{min-height:48px!important}}

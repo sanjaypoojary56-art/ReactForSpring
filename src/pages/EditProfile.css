@@ -553,3 +553,6 @@
     }
 
 }
+
+/* Professional corporate responsive overrides */
+.edit-profile-page{background:var(--jm-bg)!important;color:var(--jm-ink)!important;overflow-x:hidden!important}.profile-background{opacity:.15!important}.profile-card{background:#fff!important;border:1px solid var(--jm-line)!important;border-radius:8px!important;box-shadow:var(--jm-shadow)!important}.profile-intro h1,.card-heading{color:var(--jm-ink)!important}.profile-label{color:var(--jm-accent)!important}.input-group input{background:#fff!important;border-color:var(--jm-line)!important;border-radius:7px!important;min-height:46px!important}.skill-name{color:#344054!important}.save-profile{background:var(--jm-accent)!important;border-radius:7px!important;min-height:46px!important}.save-profile:hover{background:var(--jm-accent-dark)!important}@media(max-width:900px){.edit-profile-page{padding:30px 20px!important}.profile-container{width:min(100%,1100px)!important}}@media(max-width:600px){.edit-profile-page{padding:20px 12px!important}.profile-intro h1{font-size:34px!important;overflow-wrap:anywhere!important}.profile-card{padding:18px!important}.skills-grid{grid-template-columns:1fr!important}.save-profile{width:100%!important}}
