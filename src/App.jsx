@@ -7,6 +7,7 @@ import {
 
 import "./AppRedesign.css";
 import Login from "./pages/Login.jsx";
+import Home from "./pages/Home.jsx";
 import Register from "./pages/Register.jsx";
 import StudentDashboard from "./pages/StudentDashboard.jsx";
 import EditProfile from "./pages/EditProfile.jsx";
@@ -22,11 +23,8 @@ function App() {
 
       <Routes>
 
-        {/* / → /login */}
-        <Route
-          path="/"
-          element={<Navigate to="/login" replace />}
-        />
+        {/* Public SEO-friendly homepage */}
+        <Route path="/" element={<Home />} />
 
         {/* Authentication */}
         <Route
