@@ -1,0 +1,101 @@
+.home-page {
+  min-height: 100vh;
+  background: #f8f9fc;
+  color: #172033;
+}
+
+.home-hero {
+  padding: 90px 24px 70px;
+}
+
+.home-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-kicker {
+  margin: 0 0 14px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.home-content h1 {
+  margin: 0;
+  font-size: clamp(38px, 6vw, 64px);
+  line-height: 1.05;
+  color: #172033;
+}
+
+.home-description {
+  max-width: 700px;
+  margin: 22px auto 0;
+  color: #687083;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.home-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.home-actions a {
+  text-decoration: none;
+  border-radius: 9px;
+  padding: 13px 22px;
+  font-weight: 700;
+}
+
+.home-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.home-secondary {
+  background: white;
+  color: #172033;
+  border: 1px solid #dfe3eb;
+}
+
+.home-features {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.home-features article {
+  background: white;
+  border: 1px solid #e5e8ef;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.home-features h2 {
+  margin-top: 0;
+  color: #172033;
+  font-size: 20px;
+}
+
+.home-features p {
+  margin-bottom: 0;
+  color: #687083;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .home-hero {
+    padding-top: 60px;
+  }
+
+  .home-features {
+    grid-template-columns: 1fr;
+  }
+}
