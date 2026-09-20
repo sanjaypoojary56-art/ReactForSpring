@@ -45,7 +45,7 @@ function StudentDashboard() {
 
                 setUser(data.user || data);
                 setSkills(data.user.skill || data.user.skills || []);
-                setJobs(data.job ||[]);
+                setJobs(data.job || data.jobs || data.js || []);
                 setLoading(false);
             })
             .catch(error => {
@@ -516,7 +516,7 @@ function StudentDashboard() {
 
                                 <div
                                     className="dashboard-job-card"
-                                    key={job.id}
+                                    key={job.jobid}
                                 >
 
                                     <div className="job-card-top">
